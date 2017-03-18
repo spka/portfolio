@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>9001 interactive</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>        
+        <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="scripts/jquery-2.1.3.min.js"></script>
+        <script src="scripts/script.js"></script>
+        <script type"text/javascript" src="http://test.gfycat.com/gfycat_test_june25.js"></script>
+        <!--  Door tijdsgebrek is de site / HTML verre van geoptimaliseerd, 
+        het werkt, maar de code zeker niet op productie niveau. -->
+    </head>
+    <body>
+        <script>
+            if(window.location.hash) {
+                $('body').addClass(window.location.hash.replace('#', '') + '-active');                          
+            } else {
+                $('body').addClass('item0-active');                
+            }
+        </script>
+
+        <div class="menu">
+            <ul class="centered">
+                <img class="icon negenlogo" src="images/9001-2.svg" />
+                <img class="icon hoofdlogo" src="images/steef3.svg" data-link="item0" style="width:120px;"/>
+                <!--<li class="link link-item0" data-link="item0">
+                    Bekijk CV
+                </li>-->
+                <li class="link" data-link="item5">
+                    Recente webprojecten
+                </li>
+                <li class="link" data-link="item1">
+                    Photoshop brush test
+                </li>
+                <li class="link" data-link="item2">
+                    CI Framework Extensie
+                    <!-- <img src="images/code-icon.svg" /> -->
+                </li>
+                <li class="link" data-link="item4">
+                    WSM huisstijl voorstel
+                </li>                
+                <li class="link" data-link="item3">
+                    Ontwerp WIJ logo
+                </li>
+            </ul> 
+        </div>
+
+        <div class="scrolltop">&raquo;</div>
+        <div class="menubutton">&equiv;</div>
+
+        <div class="shdw"></div>
+
+        <div class="page item0 hidden">
+            <div class="wrapper">
+                <script type="text/javascript">
+                    var docHeight = $(document).height();
+                        padding = parseFloat($('.item0').css('paddingTop'));
+                    $('.wrapper').css('height', docHeight - (padding * 2));
+                </script>
+                <div class="center card link" data-link="cv">
+                    <img class="icon" src="images/steef.svg" />
+                    <span class="name">Stephan Karsten</span>
+                    <span class="title">Interaction&nbsp;Designer,<br>Webdeveloper</span>
+                    <span class="button">Bekijk CV</span>
+                </div>
+            </div>
+
+            <div class="cv hide">
+                <div class="backbutton" data-link="card">&times;</div>
+                <h2>
+                    <img class="icon" src="images/steef.svg" />
+                    Stephan Pieter Karsten<br>
+                    stephan.karsten@gmail.com<br>
+                    06-25211047<br>
+                    Krelagestraat 2F<br>
+                    1815VJ Alkmaar<br>
+                </h2>
+
+                <h1 class="faded">Vaardigheden</h1>
+
+                <h2>Programmeertalen</h2>
+                <p>HTML (4 / 5), CSS (2 / 3 / LESS), Javascript (jQuery / Handlebars / Phaser.io / Node.js), PHP (5+ / Codeigniter / Drupal / Wordpress), MySQL.</p>
+
+                <h2>Softwarepakketten</h2>
+                <p>Illustrator, Photoshop, Selligent toolpakket, Sublime Text, Atom.io, Git (bash / github / sourcetree), Browserstack, Flash, Fireworks, verschillende office pakketten.</p>
+
+                <h1 class="faded">Werkervaring</h1>
+
+                <h1>2011-heden Webdeveloper -&nbsp;Wij&nbsp;Special&nbsp;Media (WSM)</h1>
+                <p>Verantwoordelijk voor de ontwikkeling en het onderhoud van alle webapplicaties binnen WSM voor zowel de consumentenplatformen als de interne managementtools. Dit in samenwerking met het business intelligence team en vormgevers van de redactie- en marketingafdeling.</p>
+
+                <p>Uitgelichte projecten:<br>
+                <br>Het herbouwen en doorontwikkelen van de deblijedoos.nl, kerntaak hierbij is het afwegen tussen het goed valideren van binnenkomende data en een soepele gebruikerservaring.<br>
+                <br>Het opzetten van de abonnementenadministratie voor het magazine TROTS (doelgroep: oma's), zowel de interne administratietools voor het callcenter als de publieke website voor inschrijvingen.<br>
+                <br>Het opzetten van hetbestekinderboek.nl in samenwerking met een extern boekenhuis d.m.v. van webapi's.</p>
+
+                <h1>2009-2010 Eigen&nbsp;mediabureau - 9001interactive.nl</h1>
+                <p>Werkzaam als webdeveloper en vormgever. Werkzaamheden: Opbouwen van wireframes, flowcharts en grafische vormgeving. Html, css en javascript (jQuery) integratie op verschillende contentmanagementsystemen o.a. ModX, Wordpress. Verder verantwoordelijk voor het plegen van acquisitie, klantcontacten en het bijhouden van de bedrijfsadministratie en projectdocumentatie.</p>
+
+                <h1>2008-2009 Webdesigner -&nbsp;Wij&nbsp;Special&nbsp;Media (WSM)</h1>
+                <p>Betrokken bij de verdere ontwikkeling en het onderhoud van o.a. babyinfo.nl en kinderinfo.nl, &eacute;&eacute;n van de grootste sites van Nederland binnen de doelgroep 0 t/m 5 jaar. Werkzaamheden: Het zelfstandig verzorgen van grootschalige <nobr>e-mailcampagnes</nobr> binnen het Selligent platform. Implementatie van marketingcampagnes op beide sites d.m.v. actiepagina's, formulieren en verschillende media. Het ondersteunen van de redactie bij het opleveren van digitale content.</p>
+
+                <h1>2006-2007 Freelance&nbsp;opdrachten</h1>
+                <p>Grafische opmaak website Van den Bosch Transport. In teamverband gewerkt aan de visuele opzet van de website, rekening houdend met de huidige stijl en de praktische wensen van de opdrachtgever. Website Harry Karsten Mode:<br>In goed overleg met de opdrachtgever een op maat gemaakte website verzorgd, binnen het beschikbare budget.</p>
+
+                <h1 class="faded">Opleiding</h1>
+
+                <h1>2002-2006 Interaction&nbsp;Design -&nbsp;Hogeschool voor de Kunsten Utrecht (HKU)</h1>
+                <em><p>Diploma: Bachelor&nbsp;of&nbsp;Art&nbsp;and Technology&nbsp;with&nbsp;Honours -&nbsp;Specialisatie:&nbsp;Vormgeving</p></em>
+
+                <h1>Afstudeerproject: “Tour&nbsp;of&nbsp;Utrecht” voor Hewlett-Packard&nbsp;Bristol</h1>
+                <p>In de steeds groeiende aanwezigheid van computertechnologie worden de grenzen tussen privacy, veiligheid en gemak steeds vager. Om het publieke debat over deze onderwerpen aan de kaak te stellen gebruikt deze interactieve luistertoer een fictieve verhaallijn tussen een verzekeringsmaatschappij en een geheime hackersgroep om zo de verschillende aspecten van dit onderwerp en hun implicaties aan de gebruiker te laten zien.</p>
+
+                <h1>Thesis: Interactieve&nbsp;architectuur</h1>
+                <p>De interactie tussen de digitale en fysieke wereld biedt mogelijkheden voor vernieuwende concepten buiten de traditionele muis en toetsenbord combinatie. Wat zijn de in- en outputapparaten van de toekomst? In deze thesis o.a. een uitwerking van een digitale lamp voor de werkvloer; een projectleider, communicatiemiddel en agenda op basis van lichtarchitectuur.</p>
+
+                <h1>1997-2002 HAVO -&nbsp;Berger&nbsp;Scholen&nbsp;Gemeenschap</h1>
+                <p>Studierichting: Economie en Maatschappij</p>
+            </div>
+        </div>
+
+        <div class="page item1 hidden">
+            <h1>Photoshop brush test -&nbsp;April&nbsp;2015</h1>
+            <p>Gemotiveerd door de video's van <a target="_blank" href="http://www.ctrlpaint.com/dp101-2">Matt Kohr</a> <img class="linkimg" src="images/3H2PQ.png" /> ben ik begonnen met het testen van zijn brushset in photoshop. Standaard brushes geven vaak minder resultaat, met belangrijkste punt: De brushspacing laag houden.</p>
+            <img src="images/brushes1.jpg" style="margin: 50px 0; max-width: 400px;" />
+            <img class="gfyitem" data-id="AmusedWelldocumentedGermanpinscher" data-controls="true" data-autoplay="false" style="margin: 30px 0" />
+            <img class="gfyitem" data-id="GlisteningHelplessAmericancrayfish" data-controls="true" data-autoplay="false" style="margin: 30px 0" />            
+            <p>Bovenstaande oefeningen zijn geïnspireerd op de tekeningen van <a target="_blank" href="http://www.simonstalenhag.se">Simon Stalenhag</a> <img class="linkimg" src="images/3H2PQ.png" />, robots in het Zweden van de jaren '80. Natuurlijk kom ik niet in de buurt van zijn eindresultaten, maar het is zeker leuk om een poging te wagen een Zweeds landschap neer te zetten.</p>  
+            <img class="gfyitem" data-id="CloudyIckyKentrosaurus" data-controls="true" data-autoplay="false" style="margin: 30px 0" />
+            <img class="gfyitem" data-id="LastingSkinnyAfricanjacana" data-controls="true" data-autoplay="false" style="margin: 30px 0" />
+            <p>Grote wolkpartijen en bergen, het lijkt zo simpel als de echte conceptartists het in een paar vegen op hun scherm tonen. Lichtval op &eacute;&eacute;n kant van een vlak aanbrengen maakt snel een berg.</p>            
+        </div>
+
+        <div class="page item2 hidden">
+            <h1>Codeigniter Framework Extensie -&nbsp;Januari&nbsp;2015</h1>
+            <p>Traditionele <a target="_blank" href="http://www.codeigniter.com/user_guide/libraries/form_validation.html#creating-sets-of-rules">Codeigniter validatieregels</a> <img class="linkimg" src="images/3H2PQ.png" /> kunnen gegroepeerd worden binnen "subarrays", echter dit creëert herhaling van de individuele regels bij grote projecten.</p>
+            <p>Als alternatief voor dit systeem heb ik een library extension geschreven zodat in de configuratie een extra array key <em>"groups"</em> toegevoegd kan worden. Op deze manier kan er dynamisch een groep validatieregels gemaakt worden zonder deze opnieuw te moeten declareren.</p>
+            <p>Als extra functionaliteit kan er ook een nummer tussen de blokhaken worden toegevoegd per validatieregel om zo te bepalen hoe vaak dit veld voorkomt per formulierpost.</p>
+            <script src="https://gist.github.com/spka/061b14aa985ce9f167e7.js"></script>
+            <p>Om deze toevoeging werkend te maken moet de oorspronkelijke validatielibrary worden uitgebreid met de functie <em>"run_group"</em>.</p>
+            <script src="https://gist.github.com/spka/f9d59eda925e3c9e05cf.js"></script>
+            <p>Vervolgens kan via deze nieuwe functie de juiste groep worden opgehaald voor validatie.</p>
+            <script src="https://gist.github.com/spka/abf477eefd9f2e2179af.js"></script>
+        </div>
+
+        <div class="page item3 hidden">
+            <h1>Ontwerp WIJ-logo -&nbsp;September&nbsp;2014</h1>
+            <p>In de zomer van 2014 ben ik gevraagd om een voorstel te doen voor het nieuwe logo van WIJ Jonge Ouders. De voorstellen van verschillende ontwerpbureaus waren in de voorgaande ronde afgekeurd door de redactie. Op basis van de volgende uitgangspunten heb ik nog een ontwerp gemaakt: Het uitstralen van de kernwaarden, symboliek tussen moeder en kind, en een duidelijke merkstructuur.</p>
+            <p>Door een sans serif lettertype te kiezen met ronde vormen krijgt het logo een toegankelijke en betrouwbare uitstraling.</p>
+            <img src="images/wij2.png" />
+            <a target="_blank" href="https://typekit.com/lists/rounded-fonts">https://typekit.com/lists/rounded-fonts</a> <img class="linkimg" src="images/3H2PQ.png" />
+            <p>Problematisch voor het WIJ-logo is de balans tussen leesbaarheid van de letters W en IJ en de noodzaak om het symbolisch en uniek te maken. Vorige ontwerpen waren uniek maar lastig leesbaar of goed leesbaar maar bijna gelijk aan de normale schrijfletters.</p>
+            <p>De Nederlandse taal heeft echter een unieke ligatuur door de samengevoegde <em>i</em> en <em>j</em>. Door het gekozen lettertype uit te breiden ontstaat een karakter dat goed leesbaar is.</p>
+            <img src="images/wij1.png" />
+            <p>Om het karakter uniek te maken moet de symboliek tussen moeder en kind worden weergegeven, zonder de leesbaarheid aan te tasten. Door de vorm op onderstaande manier te breken ontstaat een ondersteunend symbool dat een ouder-kind relatie uitbeeldt.</p>
+            <img src="images/wij3.png" />
+            <p>Inmiddels wordt het logo gebruikt voor alle <a target="_blank" href="https://www.facebook.com/WIJ.nl">communicatie van WIJ</a> <img class="linkimg" src="images/3H2PQ.png" />, zowel in print als digitaal.</p>            
+        </div>
+
+        <div class="page item4 hidden">
+            <h1>WSM huisstijl voorstel -&nbsp;November&nbsp;2014</h1>
+            <p>Na het nieuwe logo was het ook noodzakelijk om de zakelijke huisstijl te herzien. Omdat het nieuwe WIJ-logo voor de consumentendoelgroep was bedoeld, was het interessant om voor de zakelijke doelgroep een andere richting te bedenken. Met als thema: In het hart van de doelgroep.</p>
+            <img src="images/WSM-huistijl-test1.jpg" />
+            <p>De eerste conceptschetsen.</p>            
+            <img src="images/WSM-huistijl-test3.jpg" />
+            <img src="images/WSM-huistijl-test2.jpg" />
+            <p>Al snel ontstond het idee om twee harten te gebruiken zodat er symbolisch een hart met een pijl of een fastforward icoon te zien is.</p> 
+            <img src="images/WSM-huistijl-logo1.jpg" />            
+            <img src="images/WSM-huistijl-mockup1.jpg" />
+            <p>Hierboven de totale uitwerking. Het is echter niet definitief geworden omdat het consumentenmerk ook heel herkenbaar was bij zakelijke klanten.</p> 
+        </div>
+
+        <div class="page item5 hidden">
+            <h1>Recente webprojecten -&nbsp;November&nbsp;2015</h1>
+
+            <h1 class="faded2">WIJ a la Mama</h1>
+
+            <p>Binnen 1 maand moest er een nieuw blog platform worden gestart met de naam WIJ a la Mama. De redactie had inmiddels een contentplan geschreven en was druk bezig met het regelen van bloggers. Aan mij is gevraagd welke techniek kon worden gebruikt om binnen deze deadline te  starten.</p>
+
+            <p>Gezien de beperkte ontwikkeltijd viel de keuze snel op wordpress. Veel gebruikt en het grote aantal plugins geeft de mogelijkheid om snel opties toe te voegen. Na het instellen van de server door de systeem administratie kon development beginnen.</p>
+
+            <p>Door de redactie te laten experimenteren met verschillende thema’s werd snel de juiste look en feel bepaald. Wel moest het uiteindelijke thema worden omgebouwd om aan alle wensen te voldoen. Ook heeft wordpress een beperkte gebruikersrechten administratie, waardoor veel van het CMS zichtbaar is voor niet admin’s. Door verschillende plugins kon dit echter op tijd verholpen worden.</p>
+
+            <p><a target="_blank" href="http://wijalamama.nl">Wijalamama.nl</a> <img class="linkimg" src="images/3H2PQ.png" /> draait inmiddels goed en heeft rond de 100.000 unieke bezoekers per maand. Verschillende thema aanpassingen liggen in het verschiet door de nieuwe inzichten, zo moet gerelateerde content beter tot z'n recht komen tijdens het lezen van een artikel.</p>
+
+            <a target="_blank" href="http://wijalamama.nl"><img src="images/iphoneWAMmock2.png" style="width: 100%;" /></a>
+
+            <h1 class="faded2">WIJ Special Media</h1>
+
+            <p>De website <a target="_blank" href="http://wijspecialmedia.nl">wijspecialmedia.nl</a> <img class="linkimg" src="images/3H2PQ.png" /> was al jaren niet geupdatet en moest nieuwe content en een nieuw uiterlijk krijgen. De site moest ook goed geschikt zijn voor mobiele apparaten, ondanks de vele onderwerpen.</p>
+
+            <p>Na een paar prototypes te hebben geprobeerd was de beste oplossing om een schuif  submenu te bouwen. Op deze manier kunnen alle items op de pagina snel worden bereikt zonder eindeloos te scrollen.</p>
+
+            <p>Gezien de zakelijke insteek van de site is het van belang om snel bepaalde producten te kunnen vinden. Ook moest het mogelijk zijn naar een specifieke producten te linken op de pagina bijvoorbeeld: <a href="http://wijspecialmedia.nl/print#wijjongeouders">wijspecialmedia.nl/print#wijjongeouders</a></p>
+
+            <a target="_blank" href="http://wijspecialmedia.nl"><img src="images/iphoneWSMmock1.png" style="width: 100%;" /></a>
+        </div>
+    </body>
+</html>
