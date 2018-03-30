@@ -3,18 +3,26 @@
         <script type="text/javascript">
             var docHeight = $(document).height(),
                 padding = parseFloat($('.page.item0').css('paddingTop'));
-            $('.wrapper').css('height', docHeight - (padding * 2));
+            $('.item0').css('min-height', docHeight - (padding * 2));
+            $('#cv-button').on('click', function() {
+                $('.cv').show();
+                $('.wrapper').hide();
+            });
+            $('.backbutton').on('click', function() {
+                $('.wrapper').show();
+                $('.cv').hide();
+            });
         </script>
-        <div class="center card link" data-link="cv">
+        <div class="center card link">
             <img class="icon" src="images/steef.svg" />
             <span class="name">Stephan Karsten</span>
             <span class="title">Interaction&nbsp;Designer,<br>Webdeveloper</span>
-            <span class="button">Bekijk CV</span>
+            <span class="button" id="cv-button">Bekijk CV</span>
         </div>
     </div>
 
-    <div class="cv hide">
-        <div class="backbutton" data-link="card">&times;</div>
+    <div class="cv" style="display:none;">
+        <div class="backbutton">&times;</div>
         <img class="icon" src="images/steef.svg" />
         <h2>
             Stephan P. Karsten<br>
@@ -31,7 +39,7 @@
 
         <h1 class="faded">Werkervaring</h1>
 
-        <h1>2011-heden Webdeveloper -&nbsp;Wij&nbsp;Special&nbsp;Media (WSM)</h1>
+        <h2>2011-heden Webdeveloper -&nbsp;Wij&nbsp;Special&nbsp;Media (WSM)</h2>
         <p>Verantwoordelijk voor de ontwikkeling en het onderhoud van alle webapplicaties binnen WSM voor zowel de consumentenplatformen als de interne managementtools. Dit in samenwerking met het business intelligence team en vormgevers van de redactie- en marketingafdeling.</p>
 
         <p>Uitgelichte projecten:<br>
@@ -39,27 +47,27 @@
         <br>Het opzetten van de abonnementenadministratie voor het magazine TROTS (doelgroep: oma's), zowel de interne administratietools voor het callcenter als de publieke website voor inschrijvingen.<br>
         <br>Het opzetten van hetbestekinderboek.nl in samenwerking met een extern boekenhuis d.m.v. van webapi's.</p>
 
-        <h1>2009-2010 Eigen&nbsp;mediabureau - 9001interactive.nl</h1>
+        <h2>2009-2010 Eigen&nbsp;mediabureau - 9001interactive.nl</h2>
         <p>Werkzaam als webdeveloper en vormgever. Werkzaamheden: Opbouwen van wireframes, flowcharts en grafische vormgeving. Html, css en javascript (jQuery) integratie op verschillende contentmanagementsystemen o.a. ModX, Wordpress. Verder verantwoordelijk voor het plegen van acquisitie, klantcontacten en het bijhouden van de bedrijfsadministratie en projectdocumentatie.</p>
 
-        <h1>2008-2009 Webdesigner -&nbsp;Wij&nbsp;Special&nbsp;Media (WSM)</h1>
+        <h2>2008-2009 Webdesigner -&nbsp;Wij&nbsp;Special&nbsp;Media (WSM)</h2>
         <p>Betrokken bij de verdere ontwikkeling en het onderhoud van o.a. babyinfo.nl en kinderinfo.nl, &eacute;&eacute;n van de grootste sites van Nederland binnen de doelgroep 0 t/m 5 jaar. Werkzaamheden: Het zelfstandig verzorgen van grootschalige <nobr>e-mailcampagnes</nobr> binnen het Selligent platform. Implementatie van marketingcampagnes op beide sites d.m.v. actiepagina's, formulieren en verschillende media. Het ondersteunen van de redactie bij het opleveren van digitale content.</p>
 
-        <h1>2006-2007 Freelance&nbsp;opdrachten</h1>
+        <h2>2006-2007 Freelance&nbsp;opdrachten</h2>
         <p>Grafische opmaak website Van den Bosch Transport. In teamverband gewerkt aan de visuele opzet van de website, rekening houdend met de huidige stijl en de praktische wensen van de opdrachtgever. Website Harry Karsten Mode:<br>In goed overleg met de opdrachtgever een op maat gemaakte website verzorgd, binnen het beschikbare budget.</p>
 
         <h1 class="faded">Opleiding</h1>
 
-        <h1>2002-2006 Interaction&nbsp;Design -&nbsp;Hogeschool voor de Kunsten Utrecht (HKU)</h1>
+        <h2>2002-2006 Interaction&nbsp;Design -&nbsp;Hogeschool voor de Kunsten Utrecht (HKU)</h2>
         <em><p>Diploma: Bachelor&nbsp;of&nbsp;Art&nbsp;and Technology&nbsp;with&nbsp;Honours -&nbsp;Specialisatie:&nbsp;Vormgeving</p></em>
 
-        <h1>Afstudeerproject: “Tour&nbsp;of&nbsp;Utrecht” voor Hewlett-Packard&nbsp;Bristol</h1>
+        <h2>Afstudeerproject: “Tour&nbsp;of&nbsp;Utrecht” voor Hewlett-Packard&nbsp;Bristol</h2>
         <p>In de steeds groeiende aanwezigheid van computertechnologie worden de grenzen tussen privacy, veiligheid en gemak steeds vager. Om het publieke debat over deze onderwerpen aan de kaak te stellen gebruikt deze interactieve luistertoer een fictieve verhaallijn tussen een verzekeringsmaatschappij en een geheime hackersgroep om zo de verschillende aspecten van dit onderwerp en hun implicaties aan de gebruiker te laten zien.</p>
 
-        <h1>Thesis: Interactieve&nbsp;architectuur</h1>
+        <h2>Thesis: Interactieve&nbsp;architectuur</h2>
         <p>De interactie tussen de digitale en fysieke wereld biedt mogelijkheden voor vernieuwende concepten buiten de traditionele muis en toetsenbord combinatie. Wat zijn de in- en outputapparaten van de toekomst? In deze thesis o.a. een uitwerking van een digitale lamp voor de werkvloer; een projectleider, communicatiemiddel en agenda op basis van lichtarchitectuur.</p>
 
-        <h1>1997-2002 HAVO -&nbsp;Berger&nbsp;Scholen&nbsp;Gemeenschap</h1>
+        <h2>1997-2002 HAVO -&nbsp;Berger&nbsp;Scholen&nbsp;Gemeenschap</h2>
         <p>Studierichting: Economie en Maatschappij</p>
     </div>
 </div>
