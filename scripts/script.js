@@ -1,20 +1,34 @@
 $(document).ready(function() {
 
-    /*  Door tijdsgebrek is de site / JS verre van geoptimaliseerd, 
-    het werkt, maar de code zeker niet op productie niveau.
-    ------------------------------------------------- */
-
+    // betere naam is mobileScreen, want daar kijkt deze naar
     var mq = window.matchMedia( "(max-width: 720px)" );
 
-    if(window.location.hash) {
-        $('.'+window.location.hash.replace('#', '')).removeClass('hidden').addClass('show');
-        if(mq.matches) {        
-            $('.menubutton').addClass('active');
+    $('.menu li').each(function(i) {
+        var page = $(this).attr('data-link');
+        appendHtml(page);
+    });
+
+    function appendHtml(page) {
+        $.ajax({
+            url: page + '.html',
+            success: function (data) { 
+                $('body').append(data);
+                showItem(page);
+            },
+            dataType: 'html'
+        });
+    }
+
+    function showItem(item) {
+        if(window.location.hash) {
+            var currentItem = window.location.hash.replace('#', '');
+            $('.page.' + currentItem).removeClass('hidden').addClass('show');
+            $('body').addClass(currentItem + '-active');
         }
-    } else {
-        if(!mq.matches) {
-            $('.item0').removeClass('hidden').addClass('show');
-        }
+        // else {
+        //     $('.page.'+item).removeClass('hidden').addClass('show');
+        //     $('body').addClass(item+'-active');         
+        // }
     }
 
     $(window).scroll(function() {
@@ -23,16 +37,6 @@ $(document).ready(function() {
         } else {
             $('.scrolltop').fadeOut();
         }
-        $('.block').each(function() {
-            // console.log($(this).isOnScreen(0.5, 0.5));
-            if ($(this).isOnScreen(0.5, 0.5) == false) {
-                $(this).addClass('fadedout');
-                $(this).removeClass('fadedin');
-            } else {
-                $(this).addClass('fadedin');
-                $(this).removeClass('fadedout');
-            }
-        });
     });
 
     $(".scrolltop").click(function() {
@@ -48,14 +52,9 @@ $(document).ready(function() {
     });
 
     $('.menubutton').click(function(e) {
-        $('.page').addClass('hidden');
+        $('.page').addClass('hidden').removeClass('show');
         $(this).removeClass('active');
-        if(mq.matches) {
-            $('.menu li').show();
-            $('.menu img').css('margin-bottom', '10px');
-        }
     });
-
 
     $('.item0 .link').click(function(e) {
         e.preventDefault();

@@ -1,0 +1,12 @@
+<div class="page item2 hidden">
+    <h1>Codeigniter Framework Extensie</h1>
+    <h3>Januari&nbsp;2015</h3>
+    <p>Traditionele <a target="_blank" href="http://www.codeigniter.com/user_guide/libraries/form_validation.html#creating-sets-of-rules">Codeigniter validatieregels</a> <img class="linkimg" src="images/3H2PQ.png" /> kunnen gegroepeerd worden binnen "subarrays", echter dit creëert herhaling van de individuele regels bij grote projecten.</p>
+    <p>Als alternatief voor dit systeem heb ik een library extension geschreven zodat in de configuratie een extra array key <em>"groups"</em> toegevoegd kan worden. Op deze manier kan er dynamisch een groep validatieregels gemaakt worden zonder deze opnieuw te moeten declareren.</p>
+    <p>Als extra functionaliteit kan er ook een nummer tussen de blokhaken worden toegevoegd per validatieregel om zo te bepalen hoe vaak dit veld voorkomt per formulierpost.</p>
+    <script src="https://gist.github.com/spka/061b14aa985ce9f167e7.js"></script>
+    <p>Om deze toevoeging werkend te maken moet de oorspronkelijke validatielibrary worden uitgebreid met de functie <em>"run_group"</em>.</p>
+    <script src="https://gist.github.com/spka/f9d59eda925e3c9e05cf.js"></script>
+    <p>Vervolgens kan via deze nieuwe functie de juiste groep worden opgehaald voor validatie.</p>
+    <script src="https://gist.github.com/spka/abf477eefd9f2e2179af.js"></script>
+</div>

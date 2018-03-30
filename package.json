@@ -1,0 +1,10 @@
+{
+  "name": "spk-portfolio",
+  "version": "2.0.0",
+  "description": "Portfolio Stephan Karsten",
+  "main": "index.html",
+  "scripts": {
+    "sass": "node-sass --watch css/ --output css/ --output-style compressed"
+  },
+  "author": "Stephan Karsten"
+}
