@@ -62,6 +62,9 @@ body {
         li {
             border-bottom-color: $itemColor1;
             color: $itemColor1;
+            &.active {
+                color: lighten($itemColor1, 30%);
+            } 
         }
     }
     .faded {
@@ -71,7 +74,7 @@ body {
 
 .item0-active {
     // @include activeColor(#5684F5);
-    @include activeColor(#5B86E5, rgb(143, 178, 255));
+    @include activeColor(#5B86E5, #8fb2ff);
 }
 .item1-active {
     @include activeColor(#185a9d, #053668);
@@ -97,7 +100,9 @@ h1, h2 {
     line-height: 1.3em;
     margin-top: 2em;
     margin-bottom: 0em;
-    &:first-child{
+}
+h1 {
+    &:first-of-type {
         margin-top: 0;
     }
 }
@@ -189,20 +194,17 @@ $cardColor: #5B86E5;
 
 .card {
     border-radius: 4px;
-    border: 3px solid $cardColor;
+    // border: 3px solid $cardColor;
     overflow: hidden;
-    color: $cardColor;
-    box-shadow: 0px 3px 0px lighten($cardColor, 20%);
+    color: #fff;
+    background-image: linear-gradient(200deg, #6B93ED, #82a7f9);
+    // box-shadow: 0px 3px 0px #5B86E5;
     cursor: pointer;
     transition: background 0.3s, color 0.3s;
     animation: fadein 1s;
     &:hover {
-        color: #fff;
-        background: $cardColor;
-        .button {
-            color: $cardColor;
-            background: #fff;
-        }
+        // color: $cardColor;
+        // background: #fff;
     }
     .name {
         font-weight: bold;
@@ -220,18 +222,23 @@ $cardColor: #5B86E5;
     }
     .button {
         border-radius: 4px;
-        background: #5684F5;
+        background: #fff;
         padding: 10px;
         margin: 0;
-        color: #fff;
+        color: $cardColor;
         position: absolute;
-        bottom: 20px;
-        left: 20px;
-        right: 20px;
-        -webkit-transition: background 0.3s, color 0.3s;
-        transition: background 0.3s, color 0.3s;
+        bottom: 35px;
+        left: 45px;
+        right: 45px;
+        font-weight: 400;
+        // -webkit-transition: background 0.3s, color 0.3s;
+        // transition: background 0.3s, color 0.3s;
         cursor: pointer;
-        border: 3px solid #5684F5;
+        border-bottom: 3px solid #5684F5;
+        &:hover {
+            // bottom: 21px;
+            border-bottom-width: 2px;
+        }
     }
 }
 
@@ -258,7 +265,8 @@ $cardColor: #5B86E5;
 // --------------------
 
 .scrolltop, 
-.backbutton {
+.backbutton,
+.homebutton {
     font-size: 42px;
     text-align: center;
     line-height: 26px;
@@ -268,12 +276,17 @@ $cardColor: #5B86E5;
     background: #fff;
     cursor: pointer;
     z-index: 101;
+    &:hover {
+        // background: #E5E5E5;
+        color: #000;
+    }
 }
 
-.backbutton {
-    position: absolute;
+.backbutton, .homebutton {
+    position: fixed;
     top: 20px;
     left: 20px;
+    color: #ccc;
 }
 
 .scrolltop {
@@ -299,15 +312,7 @@ $cardColor: #5B86E5;
     z-index: 99;
     margin: 10px;
     display: none;
-    color: #777;     
-}
-
-.scrolltop, 
-.backbutton, 
-.menubutton {
-    &:hover {
-        background: #E5E5E5;
-    }
+    color: #777; 
 }
 
 // page styles
