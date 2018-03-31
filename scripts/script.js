@@ -24,11 +24,10 @@ $(document).ready(function() {
             var currentItem = window.location.hash.replace('#', '');
             $('.page.' + currentItem).removeClass('hidden').addClass('show');
             $('body').addClass(currentItem + '-active');
+        } else {
+            $('.page.item0').removeClass('hidden').addClass('show');
+            $('body').addClass('item0-active');
         }
-        // else {
-        //     $('.page.'+item).removeClass('hidden').addClass('show');
-        //     $('body').addClass(item+'-active');         
-        // }
     }
 
     $(window).scroll(function() {
@@ -39,34 +38,34 @@ $(document).ready(function() {
         }
     });
 
-    $(".scrolltop").click(function() {
+    $('.scrolltop').click(function() {
         $('html, body').animate({
             scrollTop: 0
         }, 300);
     });
 
-    $('.backbutton').click(function(e) {
-        $('.wrapper').removeClass('hide gone');
-        $('.cv').removeClass('show');
-        $('.card').show();
-    });
+    // $('.backbutton').click(function(e) {
+    //     $('.wrapper').removeClass('hide gone');
+    //     $('.cv').removeClass('show');
+    //     $('.card').show();
+    // });
 
-    $('.menubutton').click(function(e) {
-        $('.page').addClass('hidden').removeClass('show');
-        $(this).removeClass('active');
-    });
+    // $('.menubutton').click(function(e) {
+    //     $('.page').addClass('hidden').removeClass('show');
+    //     $(this).removeClass('active');
+    // });
 
-    $('.item0 .link').click(function(e) {
-        e.preventDefault();
-        var link = $(this).attr('data-link'),
-            elm = $(this);
+    // $('.item0 .link').click(function(e) {
+    //     e.preventDefault();
+    //     var link = $(this).attr('data-link'),
+    //         elm = $(this);
 
-        $(this).parent().addClass('hide');
-        setTimeout(function() {
-            $(elm).parent().addClass('gone');
-        }, 500);
-        $('.'+link).addClass('show');
-    });
+    //     $(this).parent().addClass('hide');
+    //     setTimeout(function() {
+    //         $(elm).parent().addClass('gone');
+    //     }, 500);
+    //     $('.'+link).addClass('show');
+    // });
 
     $('.menu .link, .hoofdlogo').click(function(e) {
         e.preventDefault();
