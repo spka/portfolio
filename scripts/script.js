@@ -21,11 +21,12 @@ $(document).ready(function() {
 
     function showItem(item) {
         $('.page').removeClass('show').addClass('hidden');
+        // console.log(mq);
         if(window.location.hash) {
             var currentItem = window.location.hash.replace('#', '');
             $('.page.' + currentItem).removeClass('hidden').addClass('show');
             $('body').removeClass().addClass(currentItem + '-active');
-        } else {
+        } else if(!mq.matches) {
             $('.page.item0').removeClass('hidden').addClass('show');
             $('body').removeClass().addClass('item0-active');
         }
@@ -86,9 +87,9 @@ $(document).ready(function() {
         window.location.hash = link;
         $('.menu .link').removeClass('active');
         $(this).addClass('active');
-        if(mq.matches) {
-            $('.menu li').hide();
-            $('.menu img').css('margin-bottom', '240px');
-        }
+        // if(mq.matches) {
+        //     $('.menu li').hide();
+        //     $('.menu img').css('margin-bottom', '240px');
+        // }
     });
 });
