@@ -9,6 +9,7 @@
     <script src="scripts/qrcode.min.js" type="text/javascript"></script>
   </head>
   <body>
+    <p id="demo"></p>
     <script>
       function getParameterByName(name, url) {
         if (!url) url = window.location.href;
@@ -22,7 +23,15 @@
 
       var les = getParameterByName('les');
       var bedrag = getParameterByName('bedrag');
-      alert('les:'+les+' bedrag:'+bedrag);
+      var txt;
+      // alert('les:'+les+' bedrag:'+bedrag);
+      if (confirm('Rijles bevestigen: '+les+' '+bedrag)) {
+        // txt = 'You pressed OK!';
+        document.getElementById("demo").innerHTML = 'les bevestigd';
+      } else {
+        // txt = 'You pressed Cancel!';
+        document.getElementById("demo").innerHTML = 'les niet bevestigd';
+      }
     </script>
   </body>
 </html>
