@@ -25,12 +25,10 @@
       var bedrag = getParameterByName('bedrag');
       var txt;
       // alert('les:'+les+' bedrag:'+bedrag);
-      if (confirm('Rijles bevestigen: '+les+' '+bedrag)) {
-        // txt = 'You pressed OK!';
-        document.getElementById("demo").innerHTML = 'les bevestigd';
+      if (confirm('Rijles bevestigen')) {
+        document.getElementById("demo").innerHTML = 'Rijles '+les+' &euro;'+bedrag+',- bevestigd';
       } else {
-        // txt = 'You pressed Cancel!';
-        document.getElementById("demo").innerHTML = 'les niet bevestigd';
+        document.getElementById("demo").innerHTML = 'Rijles niet bevestigd';
       }
     </script>
   </body>
