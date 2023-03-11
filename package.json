@@ -6,5 +6,8 @@
   "scripts": {
     "sass": "node-sass --watch css/ --output css/ --output-style compressed"
   },
-  "author": "Stephan Karsten"
+  "author": "Stephan Karsten",
+  "devDependencies": {
+    "sass": "^1.59.2"
+  }
 }
