@@ -4,7 +4,7 @@
   "description": "Portfolio Stephan Karsten",
   "main": "index.html",
   "scripts": {
-    "sass": "node-sass --watch css/ --output css/ --output-style compressed"
+    "sass": "sass css/style.scss:css/style.css --style=compressed -w --no-source-map"
   },
   "author": "Stephan Karsten",
   "devDependencies": {
